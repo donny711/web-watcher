@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 SNAPSHOTS_DIR = "snapshots"
 
-# tags that are usually just noise
+
 SKIP_TAGS = ["script", "style", "nav", "footer", "header", "aside", "noscript"]
 
 
@@ -40,7 +40,7 @@ def get_page_text(url):
 
 
 def get_diff(old, new):
-    # returns colored diff lines, max 20
+
     lines_old = old.splitlines(keepends=True)
     lines_new = new.splitlines(keepends=True)
 
@@ -75,7 +75,7 @@ def print_diff(url, diff_lines):
 
 
 def send_email(url, diff_lines, from_addr, to_addr, password):
-    # TODO: could add html email later
+  
     clean = re.sub(r"\033\[[0-9;]*m", "", "\n".join(diff_lines))
     body = f"change at {url}\n\n{clean}"
     msg = MIMEText(body)
