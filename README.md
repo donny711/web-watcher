@@ -14,7 +14,7 @@ Monitor websites for content changes. Get notified in your terminal — and opti
 ## Installation
 
 ```bash
-git clone <your-repo-url> web-watcher
+git clone  https://github.com/donny711/web-watcher
 cd web-watcher
 pip install -r requirements.txt
 ```
