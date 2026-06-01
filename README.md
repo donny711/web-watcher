@@ -2,6 +2,10 @@
 
 Monitor websites for content changes. Get notified in your terminal — and optionally by email — when a page updates.
 
+## Demo
+
+![web-watcher demo](assets/demo.png)
+
 ## Requirements
 
 - Python 3.9 or newer
